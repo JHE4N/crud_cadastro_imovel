@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Imóveis</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Imóveis</span>
+      <button onclick="openModal()" id="new">Adicionar</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Proprietário</th>
+            <th>Tipo de Imóvel</th>
+            <th>Preço do Imóvel</th>
+            <th>Área do Imóvel</th>
+            <th>Endereço</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+            <label for="m-nome">Nome do Proprietário</label> <!--nome-->
+            <input id="m-nome" type="text"  required placeholder="Irineu dos Santos" />
+
+            <label for="m-tipo">Tipo do Imóvel</label> <!--tipo-->
+            <input id="m-tipo" type="text" required  placeholder="Casa"/>
+    
+            <label for="m-preco">Preço do imóvel</label> <!--funcao-->
+            <input id="m-preco" type="text" required placeholder="R$800.000,00"/>
+    
+            <label for="m-area">Área do Imóvel</label> <!--salario-->
+            <input id="m-area" type="number" required placeholder="70m²" />
+
+            <label for="m-endereco">Endereço</label> <!---->
+            <input id="m-endereco" type="text" required  placeholder="Rua dos Vivos Nº2469"/>
+            <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
