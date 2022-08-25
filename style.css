@@ -14,6 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: gray;
+  background-image: url('https://images.alphacoders.com/435/435117.jpg');
 }
 
 button {
@@ -25,7 +26,7 @@ button {
   height: 80%;
   border: 1px solid black;
   border-radius: 10px;
-  background: white;
+  background: rgba(255,255,255, 0.80)
 }
 
 .header {
@@ -105,6 +106,12 @@ thead tr th.acao {
 }
 
 tbody tr td.acao {
+  text-align: center;
+}
+
+/*Tamanho dos Svgs Icons*/
+.svg svg{
+  height: 20px;
   text-align: center;
 }
 
